@@ -16,7 +16,6 @@ function NewUser(firstName, lastName, birthday) {
             + this.birthday.substring(6);
         return password;
     }
-
 }
 
 function createNewUser() {
@@ -27,12 +26,10 @@ function createNewUser() {
     return user;
 }
 
-// let user = createNewUser();
-// console.log(user.getLogin());
-// console.log(user.getAge());
-// console.log(user.getPassword());
-
-console.log(typeof 3);
+let user = createNewUser();
+console.log(user.getLogin());
+console.log(user.getAge());
+console.log(user.getPassword());
 
 let arr = ['hello', 'world', 23, '23', null];
 function filterBy(arr, type) {
@@ -45,4 +42,4 @@ function filterBy(arr, type) {
     return res;
 }
 
-console.log(filterBy(arr, "number"));
+console.log(filterBy(arr, "string"));
